@@ -1,0 +1,31 @@
+assets\
+	records\ 		保存录制的视频
+bin\
+	camera.py 		用于处理数据发送端的模块
+	config.py		用于处理软件配置参数的模块
+	monitor.py		接收端类，用于接收摄像头数据、控制消息数据并进行相关操作
+	translate_ui.py	用于处理ui文件的模块
+lib\
+	camera_device.py	用于处理摄像头设备的模块
+	camera_label.py	用于服务端处理摄像头数据的控件
+	data_handler.py	用于处理数据传输编码与解码的模块
+	database.py		用于处理数据库的模块
+	message.py		用于处理消息传输的模块
+	tcp.py			用于处理数据传输的模块
+	video.py		用于发送视频数据的模块
+ui\
+	camera.ui		客户端ui界面
+	camera.png 		客户端软件icon图标
+	monitor.png 	服务端软件icon图标
+
+
+
+
+
+
+
+
+
+
+
+

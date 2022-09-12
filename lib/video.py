@@ -12,7 +12,7 @@ from lib.message import MessageClient
 from loguru import logger
 
 
-class VideoSender1(QThread):
+class VideoSender(QThread):
     """
     发送视频到服务器，同时发送信号到本地进行回显
     """
@@ -44,7 +44,7 @@ class VideoSender1(QThread):
         打开摄像头，执行一些初始化操作
         """
         try:
-            cap = self.cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
+            cap = self.cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
             cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
             cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
         except:
